@@ -40,6 +40,12 @@
     color: #000000;
 }
 
+.nav__link li:hover{
+    transform: scale(1.2) ;
+    transition: .4s;
+    color: #d63030;
+}
+
 
 .boton button{
     background-color: rgb(179, 124, 124);
@@ -51,7 +57,10 @@
     transition: transform .4s;
 }
 
-
+.boton button:hover{
+    color: white;
+    transform: scale(1.2);
+}
 
 footer{
     display: flex;
