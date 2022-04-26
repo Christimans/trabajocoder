@@ -51,10 +51,7 @@
     transition: transform .4s;
 }
 
-.boton button:hover{
-    color: white;
-    transform: scale(1.2);
-}
+
 
 footer{
     display: flex;
