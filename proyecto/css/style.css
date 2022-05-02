@@ -3,24 +3,55 @@
     margin: 0; 
     box-sizing: border-box;}
 
-.nav__link li, a, button{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+/* bootstrap */
+span{
+    color: rgb(209, 5, 5);
+}
+.bg-bordo{
+    background-color: brown;
+}
+.c-bordo{
     color: brown;
-    text-decoration: none;
+}
+.bg-blanco{
+    background-color: white;
+}
+.c-blanco{
+    color: white;
+}
+.bg-none{
+    background-color: none;
+}
+
+.carrusel img{
+    height: 900px;
+}
+/* fin bootstrap */
+
+.nav__link li, a, button{
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 20px;
+color: brown;
+text-decoration: none;
 }
 
 .nav__link{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1em;
 
 }
 
 .logo{
-    cursor: pointer;
+cursor: pointer;
+}
+.logo{
+display: block;
+padding-left: 150px;
+padding-top: 10px;
+height: 95px;
 }
 
 .nav__link{

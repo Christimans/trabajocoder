@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nosotros</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body class="menu_nosotros">
+
+    <!-- header navegador ----------------------------------------------------------------------->
+
     <header>
 
             <nav>
                 <ul class="nav__link">
-                    <img class="logo" src="../imagen/Logo Empresa.png" alt="logodeempresa">
+                    <img class="logo" src="../imagen/logo mperez.svg" alt="logodeempresa">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./comotrabajamos.html">Nosotros</a></li>
                     <li><a href="./galeria.html">Galeria</a></li>
@@ -26,26 +36,94 @@
                 </ul>
             </nav>
     </header>
-<main class="main">
-    <section class="nosotros">
-        <h1 class="titulo"><span>Quienes </span><br> Somos?</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus est labore accusantium obcaecati consectetur? Blanditiis esse quae aut maxime dolores.</p>
-       <div class="primero img_1">
-           <img src="../imagen/paranosotros.jpg" alt="foto" class="img">
-       </div>
-       
-       <h1 class="titulo"><span>Como</span><br> Trabajamos?</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, rem.</p>
-       <div class="segundo img_2">
-           <img src="../imagen/paranosotro2.jpg" alt="foto" class="img">
-       </div>
-       
-    </section>
-</main>
+
+    <!-- Main nosotros --------------------------------------------------------------------------------------->
+
+    <main class="container">
+        <section class="row">
+
+            <div class="col-6 p-5 ">
+                <img src="../imagen/paranosotros.jpg" alt="" class="img-fluid w-50">
+            </div>
+
+            <div class="col-6 order-lg-first">
+                <div class="col-12  mt-5">
+                    <h1 class="fw-bold text-center c-blanco"><span>QUIENES</span><br> SOMOS?</h1>
+                </div>
+                <div class="col-12">
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nisi voluptatibus placeat neque earum minus asperiores quo, libero repudiandae voluptas fugit assumenda dignissimos ea inventore repellendus sequi maiores illo commodi!</p>
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+
+        </section>
+
+        <section class="row">
+
+            <div class="col-6 p-5">
+                <img src="../imagen/paranosotro2.jpg" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-6 order-lg-first">
+                <div class="col-12  mt-5">
+                    <h1 class="fw-bold text-center c-blanco"><span>COMO</span><br> TRABAJAMOS?</h1>
+                </div>
+                <div class="col-12">
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nisi voluptatibus placeat neque earum minus asperiores quo, libero repudiandae voluptas fugit assumenda dignissimos ea inventore repellendus sequi maiores illo commodi!</p>
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+
+        </section>
+
+        
+    </main>
     
-<footer class="footer">
-    <a href="https://www.instagram.com/mperezcontrucciones_srl/"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://api.whatsapp.com/send?phone=5493513070159"><i class="fa-brands fa-whatsapp"></i></a>      
-</footer>
+    <!-- footer ------------------------------------------------------------------------------------------------->
+
+    <footer class="container-fluid">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12 col-lg-3 p-3 text-center">
+                    <img src="../imagen/logo mperez.svg" alt="" width="80" height="90">
+
+                    <p class="text-center">MPEREZCONSTRUCCIONES@HOTMAIL.COM</p>
+                </div>
+
+                <div class="col-12 col-lg-6 p-3 text-center fs-4">
+                    <p><span>Redes</span> sociales</p>
+
+                    <div>
+
+                        <a href="https://www.instagram.com/mperezcontrucciones_srl/"><i
+                                class="bi-instagram fs-4 c-bordo"></i></a>
+
+                        <a href="https://api.whatsapp.com/send?phone=5493513070159"><i
+                                class="bi-whatsapp fs-4 c-bordo"></i></a>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+<script src="js/bootstrap.js"></script>
+
 </body>
 </html>
