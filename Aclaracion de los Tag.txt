@@ -1,0 +1,55 @@
+ *Tag Descripcion 
+
+<meta name="description" content= "Somos una empresa constructora con mas de 10 años de trabajos, abarcando todo los rubro de la construccion" />
+
+aca hago una breve explicacion de la empresa y sus cualidades
+
+ *Tag Keywords
+
+<meta name="keywords" content="Construccion, Presupuestos, con llave en mano">
+
+aqui coloco la palabra clave
+
+ *Tag Robots
+
+<meta name="robots" content="index, follow">
+
+aqui utilizo el robot para darle condiciones
+
+-Index
+
+Esta directriz permite al robot de búsqueda la indexación de una página de HTML
+
+-Follow
+
+El comportamiento estándar de los motores de búsqueda consiste en recorrer los enlaces que encuentra en una página de HTML
+
+ *Tag Language
+
+<meta name="language" content="Spanish"> 
+
+aca le determino el lenguaje, en este caso en español
+
+ *Tag Author
+
+<meta name="author" content="mperezconstrucciones">
+
+aca aclaro que soy el autor de la pagina
+
+ *Tag Copyright
+
+<meta name="copyright" content="mperezconstrucciones">
+
+aca aclaro mi copyrigth ya que soy el autor de la misma
+
+ *Tag Cache-control
+
+<meta http-equiv="cache-control" content="no-cache"/>
+
+Para asegurar la fluidez del funcionamiento de Internet
+
+ *Tag Datecreated
+
+<meta name="datecreated" content="Wed, 11 May 2022 16:45:32 GMT+1">
+
+aca aclaro el dia que fue creado la wed

@@ -1,3 +1,7 @@
+
+@import "_funciones";
+
+
 // bootstrap
 span{
     color: rgb(182, 21, 21);
@@ -9,10 +13,10 @@ span{
     color: brown;
 }
 .bg-blanco{
-    background-color: white;
+    background-color: map-get($map: $colores,  $key: "colorsecundario");
 }
 .c-blanco{
-    color: white;
+    color: map-get($map: $colores,  $key: "colorsecundario");
 }
 .bg-none{
     background-color: none;
@@ -85,14 +89,7 @@ span{
 // Pagina principal "inicio"
 
 .menu_principal{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(220, 40%, 13%, 0.8)), url(../imagen/fondomaquina.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(219, 39%, 13%, 0.8)), url(../imagen/fondomaquina.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Montserrat', sans-serif;
+    @include body("../imagen/fondomaquina.jpg");
 
     header{
         background-color: rgba(255, 255, 255, 0.466);
@@ -103,14 +100,7 @@ span{
 // Nosotros
 
 .menu_nosotros{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(220, 40%, 13%, 0.8)), url(../imagen/paranosotros.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(219, 39%, 13%, 0.8)), url(../imagen/paranosotros.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Montserrat', sans-serif;
+    @include body("../imagen/paranosotros.jpg");
     
     header{
         background-color: rgba(255, 255, 255, 0.466);
@@ -126,13 +116,7 @@ span{
 // Galeria
 
 .menu_galerias{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(220, 40%, 13%, 0.8)), url(../imagen/fondodegaleria.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(219, 39%, 13%, 0.8)), url(../imagen/fondodegaleria.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+    @include body("../imagen/fondodegaleria.jpg");
 
     header{
         background-color: rgba(255, 255, 255, 0.466);
@@ -141,7 +125,7 @@ span{
 
 .titulo{
     display: flex;
-    color: #fff;
+    
     font-weight: 900;
     font-size: 50px;
     justify-content: center;
@@ -221,7 +205,7 @@ span{
             background-color: rgba(66, 65, 65, 0.651);
             transform: translate(100%);
             transition: transform .4s;
-            color: white;
+            color: map-get($map: $colores,  $key: "colorsecundario");
         }
         &:hover::before{
             transform: translate(0);
@@ -232,14 +216,7 @@ span{
 // Servicios
 
 .menu_servicios{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(220, 40%, 13%, 0.8)), url(../imagen/fondomaquina.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(219, 39%, 13%, 0.8)), url(../imagen/fondomain.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Montserrat', sans-serif;
+    @include body("../imagen/fondomain.jpg");
 
     header{
         background-color: rgba(255, 255, 255, 0.466);
@@ -249,15 +226,7 @@ span{
 // Contacto
 
 .menu_contactos{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(220, 40%, 13%, 0.8)), url(../imagen/fondo\ de\ contacto.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(212, 40%, 24%, 0.801), hsla(219, 39%, 13%, 0.8)), url(../imagen/fondo\ de\ contacto.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    @include body("../imagen/fondodecontacto.jpg");
 
     header{
         background-color: rgba(255, 255, 255, 0.466);
@@ -306,16 +275,14 @@ span{
                         transition: backgraound-color 1s ease-in-out;
                     }
                 }
-                button,
-                input,
+                button{
+                    @extend .mod-size;
+                }
+                input{
+                    @extend .mod-size;
+                }
                 textarea{
-                    width: 100%;
-                    padding: 1em;
-                    border: none;
-                    background: none;
-                    border-bottom: 1px solid #9b1414;
-                    outline: 0;
-                    color: #fff;
+                    @extend .mod-size;                    
                 }
             }
         }
