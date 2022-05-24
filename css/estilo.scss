@@ -4,13 +4,13 @@
 
 // bootstrap
 span{
-    color: rgb(182, 21, 21);
+    color: map-get($map: $colores,  $key: "colorbordo");
 }
 .bg-bordo{
-    background-color: brown;
+    background-color: map-get($map: $colores,  $key: "colorbordo");
 }
 .c-bordo{
-    color: brown;
+    color: map-get($map: $colores,  $key: "colorbordo");
 }
 .bg-blanco{
     background-color: map-get($map: $colores,  $key: "colorsecundario");
@@ -20,6 +20,9 @@ span{
 }
 .bg-none{
     background-color: none;
+}
+.c-negro{
+    color: map-get($map: $colores,  $key: "colornegro");
 }
 
 .carrusel img{
