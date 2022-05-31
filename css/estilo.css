@@ -1,6 +1,4 @@
 .mod-size, .formulario .contenido-principal .contenido-secundario form .form-text input, .formulario .contenido-principal .contenido-secundario form .form-text textarea {
-  width: 100%;
-  padding: 1em;
   border: none;
   background: none;
   border-bottom: 1px solid #9b1414;
@@ -384,7 +382,7 @@ span {
 }
 
 .contenido-de-informacion ul {
-  list-style: 0;
+  list-style: none;
   padding: 0;
 }
 
