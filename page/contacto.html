@@ -58,29 +58,35 @@
           <div class="contenido-principal">
             <div class="contenido-secundario">
                 <h3>Contactanos</h3>
-                <form action="">
-                    <p>
-                        <label>Nombre y Apellido</label>
-                        <input type="text" name="fullname">
-                    </p>
-                    <p>
-                        <label>Email</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Telefono</label>
-                        <input type="tel" name="telefono">
-                    </p>
-                    <p class="block">
-                        <label>Comentario</label>
-                        <textarea name="mensaje" rows="5"></textarea>
-                    </p>
-                    <p class="block">
-                        <button type="submit">
-                            Enviar
-                        </button>
-                    </p>
-                </form>
+                <form>
+                    <section class="form-text">
+                    <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido">
+                        </div>
+                      </div><br>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-label="emailHelp">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Comentar" id="floatingTextarea2" style="height: 100px" aria-label="comentarios"></textarea>
+                      </div>
+                </section><br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleciones la consulta</option>
+                        <option value="1">Materiales + mano de obra</option>
+                        <option value="2">Solo mano de obra</option>
+                      </select><br>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Acepto terminos y condiciones</label>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Consultar</button>
+
+                  </form>
 
             </div>
           </div>
